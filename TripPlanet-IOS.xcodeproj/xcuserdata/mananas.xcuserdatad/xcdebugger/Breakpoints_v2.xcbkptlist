@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3408C764-614A-4551-9E65-B78F0B24BFBB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E25A1A6D-D20E-45CB-A8CE-371DFF30BA99"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TripPlanet-IOS/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "SignInViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "E25A1A6D-D20E-45CB-A8CE-371DFF30BA99 - e85ab3ef364ee507"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TripPlanet_IOS.ViewController.userNameTextField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "TripPlanet-IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mananas/XcodeProjects/TripPlanet-IOS/TripPlanet-IOS/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "E25A1A6D-D20E-45CB-A8CE-371DFF30BA99 - 17f6ca964488d113"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TripPlanet_IOS.ViewController.userNameTextField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "TripPlanet-IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mananas/XcodeProjects/TripPlanet-IOS/TripPlanet-IOS/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "E25A1A6D-D20E-45CB-A8CE-371DFF30BA99 - 445fab44a07b08d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TripPlanet_IOS.ViewController.userNameTextField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "TripPlanet-IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mananas/XcodeProjects/TripPlanet-IOS/TripPlanet-IOS/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14">
+               </Location>
+               <Location
+                  uuid = "E25A1A6D-D20E-45CB-A8CE-371DFF30BA99 - 91f49aaee45dfc30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TripPlanet_IOS.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TripPlanet_IOS.ViewController"
+                  moduleName = "TripPlanet-IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mananas/XcodeProjects/TripPlanet-IOS/TripPlanet-IOS/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14">
+               </Location>
+               <Location
+                  uuid = "E25A1A6D-D20E-45CB-A8CE-371DFF30BA99 - 54e20091632fd1f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TripPlanet_IOS.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TripPlanet_IOS.ViewController&gt;"
+                  moduleName = "TripPlanet-IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mananas/XcodeProjects/TripPlanet-IOS/TripPlanet-IOS/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
