@@ -115,21 +115,24 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" systemColor="systemRedColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted" title="Google"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="Google" title="Google"/>
+                                                <connections>
+                                                    <action selector="signInWithGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CXP-ms-oTE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgc-GQ-Otn">
                                                 <rect key="frame" x="80" y="628" width="224" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" systemColor="systemGrayColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted" title="Apple"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="Apple" title="Apple"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ccp-Lm-Yjh">
                                                 <rect key="frame" x="80" y="671" width="224" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted" title="Facebook"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="Facebook" title="Facebook"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -150,11 +153,12 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <keyboardLayoutGuide key="keyboard" id="JrM-tB-TUa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OWt-QJ-4dK" secondAttribute="trailing" id="2tr-F4-gNl"/>
                             <constraint firstItem="OWt-QJ-4dK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3va-Ey-1br"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OWt-QJ-4dK" secondAttribute="bottom" id="8TB-u6-oct"/>
+                            <constraint firstItem="JrM-tB-TUa" firstAttribute="top" secondItem="OWt-QJ-4dK" secondAttribute="bottom" id="8TB-u6-oct"/>
                             <constraint firstItem="OWt-QJ-4dK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zXL-SI-TZx"/>
                         </constraints>
                     </view>
@@ -178,8 +182,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1098"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ARV-rb-9dG">
-                                <rect key="frame" x="0.0" y="172" width="393" height="960"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARV-rb-9dG">
+                                <rect key="frame" x="0.0" y="172" width="393" height="858"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qG-Eb-RH4" userLabel="Scroll Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="920"/>
@@ -329,10 +333,11 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lnJ-6g-IMS"/>
+                        <keyboardLayoutGuide key="keyboard" id="m6k-m4-u7w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ARV-rb-9dG" firstAttribute="top" secondItem="lnJ-6g-IMS" secondAttribute="top" id="Fe0-sE-PJz"/>
-                            <constraint firstItem="lnJ-6g-IMS" firstAttribute="bottom" secondItem="ARV-rb-9dG" secondAttribute="bottom" id="HrV-Vc-DXV"/>
+                            <constraint firstItem="m6k-m4-u7w" firstAttribute="top" secondItem="ARV-rb-9dG" secondAttribute="bottom" id="HrV-Vc-DXV"/>
                             <constraint firstItem="ARV-rb-9dG" firstAttribute="leading" secondItem="lnJ-6g-IMS" secondAttribute="leading" id="KHu-GG-6BC"/>
                             <constraint firstItem="ARV-rb-9dG" firstAttribute="trailing" secondItem="lnJ-6g-IMS" secondAttribute="trailing" id="xdV-vc-OGe"/>
                         </constraints>
@@ -389,6 +394,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Apple" width="24" height="24"/>
+        <image name="Facebook" width="24" height="24"/>
+        <image name="Google" width="24" height="24"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
