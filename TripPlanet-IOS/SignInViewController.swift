@@ -79,5 +79,18 @@ class SignInViewController: UIViewController {
     }
     
     
+    @IBAction func resetPassword(_ sender: Any) {
+        let email = userNameTextField.text ?? ""
+        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+            if let error = error {
+                print(error.localizedDescription)
+                self.showMessage(message: error.localizedDescription)
+                return
+            }
+                    
+            self.showMessage(message: "We sent you an email for reset your password")
+        }
+    }
+    
 }
 
