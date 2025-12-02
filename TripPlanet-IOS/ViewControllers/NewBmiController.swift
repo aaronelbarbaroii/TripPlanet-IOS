@@ -76,7 +76,7 @@ class NewBmiController: UIViewController {
                 
                 try docRef.setData(from: bmi)
                 
-                showAlert(message: "bmi")
+                showAlert(message: "Bmi added successfully!")
                 
             } catch {
                 print("Error adding document: \(error)")
@@ -85,50 +85,31 @@ class NewBmiController: UIViewController {
         
     }
     
-    
     func estadoIMC(imc: Double) -> String {
         if imc < 18.5 {
             estado.textColor = .bmiColorUnderweight
             resultLabel.textColor = .bmiColorUnderweight
-            return "Bajo peso"
+            return "Underweight"
         } else if imc < 24.9 {
             estado.textColor = .bmiColorNormal
             resultLabel.textColor = .bmiColorNormal
-            return "Peso saludable"
+            return "Healthy weight"
         } else if imc < 29.9 {
             estado.textColor = .bmiColorOverweight
             resultLabel.textColor = .bmiColorOverweight
-            return "Sobrepeso"
+            return "Overweight"
         } else if imc < 34.9 {
             estado.textColor = .bmiColorObesity
             resultLabel.textColor = .bmiColorObesity
-            return "Obesidad"
+            return "Obesity"
         }
         else {
             estado.textColor = .bmiColorExtremeObesity
             resultLabel.textColor = .bmiColorExtremeObesity
-            return "Obesidad mórbida"
+            return "Extreme obesity"
         }
     }
     
-    // Dentro de una acción de un botón o método, por ejemplo:
-    func showAlert(message: String) {
-        var messageText: String = ""
-        if(message == "bmi") {
-            messageText = "User created correctly"
-        }
-        
-        
-        
-        let alert = UIAlertController(title: "Atención",
-                                      message: "\(messageText)",
-                                      preferredStyle: .alert)
-
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-            // Código a ejecutar al presionar OK
-        }))
-
-        self.present(alert, animated: true, completion: nil)
-    }
+    
 
 }

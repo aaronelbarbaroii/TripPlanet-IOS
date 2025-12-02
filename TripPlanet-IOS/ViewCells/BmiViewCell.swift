@@ -28,10 +28,28 @@ class BmiViewCell: UITableViewCell {
         let date = bmi.currentDate
         let currentDate = Date(timeIntervalSince1970: TimeInterval(date) / 1000)
         let formatter = DateFormatter()
+        let bmi = Double(bmi.bmi)
         formatter.dateFormat = "dd MMM yyyy"
         let dateFormatted = formatter.string(from: currentDate)
         dateLabel.text = dateFormatted
-        bmiLabel.text = String(bmi.bmi)
+        bmiLabel.text = String(bmi)
+        colorBmi(bmi: bmi)
     }
+    
+    func colorBmi(bmi: Double){
+        switch bmi {
+            case 18.5..<25:
+                bmiLabel.textColor = .bmiColorNormal
+            case 25..<29.9:
+                bmiLabel.textColor = .bmiColorOverweight
+            case 30..<34.9:
+                bmiLabel.textColor = .bmiColorObesity
+            case 35..<39.9:
+                bmiLabel.textColor = .bmiColorExtremeObesity
+            default:
+            bmiLabel.textColor = .bmiColorUnderweight
+        }
+    }
+    
 
 }

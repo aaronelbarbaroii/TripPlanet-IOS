@@ -21,4 +21,19 @@ extension UIViewController{
     func showMessage(message: String) {
         showMessage(title: nil, message: message)
     }
+    
+    // Dentro de una acción de un botón o método, por ejemplo:
+    func showAlert(message: String) {
+        
+        let alert = UIAlertController(title: "Alert",
+                                      message: "\(message)",
+                                      preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            // Código a ejecutar al presionar OK
+        }))
+
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
